@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>Csmart Genius</title>
+  </head>
+  <body>
+    <h1>Csmart Genius</h1>
+    <h3>現在のスマートフォンの使用状況を入力し最適なキャリアとプランを見つけましょう！！</h3>
+
+    <h4>ご購入予定のiPhoneをお選びください</h4>
+    <FORM action="/01_src/test_naka/comparison_test.py" method="POST">
+      <div>
+        <input type="radio" name="device" value=1> iPhone11 64GB <br />
+        <input type="radio" name="device" value=2> iPhone11 128GB <br />
+        <input type="radio" name="device" value=3> iPhone11 256GB <br />
+        <input type="radio" name="device" value=4> iPhone11 pro 64GB <br />
+        <input type="radio" name="device" value=5> iPhone11 pro 256GB <br />
+        <input type="radio" name="device" value=6> iPhone11 pro 512GB <br />
+      </div>
+
+      <div>
+        <h4>１ヶ月あたりの通信量を入力してください</h4>
+        <input type="number" name="data_score" > GB <br />
+      </div>
+     
+      <div>
+        <h4>１ヶ月あたりの通話時間を入力してください</h4>
+        <input type="number" name="device"> 分 <br />
+      </div>
+
+      <div>
+        <h4>家族回線の数を入力してください</h4>
+        <input type="number" name="family_count"> 回線 <br />
+      </div>
+
+      <div>
+        <h4>自宅で使用している固定プロバイダーを入力してください</h4>
+        <input type="text" name="provider_select">  <br />
+      </div>
+
+      <div>
+        <h4>支払い方法を選択してください</h4>
+        <input type="radio" name="payment" value=1> 一括払い <br />
+        <input type="radio" name="payment" value=2> 分割払い <br />
+      </div>
+
+      <h3><button type="submit">おすすめプランを検索！！</button></h3>
+
+    </FORM>
+
+  </body>
+</html>
